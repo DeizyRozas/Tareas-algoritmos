@@ -1,5 +1,5 @@
 
-/*function numerosmayores(p){
+function numerosmayores(p){
   var Y=3;
   var x=0;
   for (var i=0; i<p.length; i++){
@@ -52,7 +52,7 @@ for(var i=0; i< u.length ; i++){
 }
 return (u);
 }
-console.log(reemplazonegativos([1,2,-3,-5,5]));*/
+console.log(reemplazonegativos([1,2,-3,-5,5]));
 
 
 
@@ -60,18 +60,6 @@ console.log(reemplazonegativos([1,2,-3,-5,5]));*/
 
 
 function removerRango(arr,s,f){
-  var temp=0;
-  for(var i=0; i<arr.length; i++){
-    if(i==s){
-      for(var x=s; x<=f; x++){
-        temp=arr[arr.length-1];
-        arr[arr.length-1]=arr[x];
-        arr[x]=temp;
-        arr.pop();
-      }
-    }
-  }
-return(arr);
-}
+  var temp=[];
 
-console.log(removerRango([20,30,40,50,60,70],2,4));
+console.log(removerRango([20,30,40,50,60,70],2,5));
