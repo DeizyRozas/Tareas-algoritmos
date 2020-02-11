@@ -36,8 +36,20 @@ function resetNegativos(x){
   arr= reverso([1,2,3,4,5]);
   console.log (arr);
 
-  Crea una función que cambie un array repitiendo sus valores originales 
-  (manteniendo el mismo orden). Por ejemplo, repetirValores([4,”Ulysses”, 42, false]) 
-  debiera dar [4,4, “Ulysses”, “Ulysses”, 42, 42, false, false].
+
+  
+
+
+
+  function repetir(x){
+    var rep=[];
+    for (i=0; i<x.length; i++){
+      rep.push(x[i]);
+      rep.push(x[i]);
+    }
+    x=rep;
+    return x;
+  }
+  console.log (repetir([4,"Ulysses", 42, false]));
 
   
