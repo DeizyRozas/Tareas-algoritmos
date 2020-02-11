@@ -61,5 +61,12 @@ console.log(reemplazonegativos([1,2,-3,-5,5]));
 
 function removerRango(arr,s,f){
   var temp=[];
-
-console.log(removerRango([20,30,40,50,60,70],2,5));
+  for(i=0; i< arr.length;i++){
+    if(i<s || i>f){
+      temp.push(arr[i])
+    }
+  }
+  arr = temp;
+  return arr;
+}
+console.log(removerRango([20,30,40,50,60,70,50],2,4));
