@@ -51,5 +51,3 @@ function resetNegativos(x){
     return x;
   }
   console.log (repetir([4,"Ulysses", 42, false]));
-
-  
